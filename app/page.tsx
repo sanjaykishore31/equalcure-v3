@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Stethoscope, Building2, Users, Handshake, ArrowRight, ShieldCheck, Calendar, MessageSquare } from 'lucide-react';
+import { Stethoscope, Building2, Users, HandHelp, ArrowRight, ShieldCheck, Calendar, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { LoginButton } from '@/components/login-button';
 import { Logo } from '@/components/ui/logo';
@@ -96,7 +96,7 @@ export default function Home() {
               
               <div className="flex flex-col items-center p-4">
                 <div className="bg-white/10 p-4 rounded-full mb-4">
-                  <Handshake className="h-8 w-8 text-white" />
+                  <HandHelp className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">340B Optimization</h3>
                 <p className="text-white/80 text-center">
