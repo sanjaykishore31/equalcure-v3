@@ -9,8 +9,26 @@ import { Providers } from './providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'EqualCure - Modern Telehealth Platform',
-  description: 'Connect with healthcare professionals online',
+  title: 'EqualCure | HCV Treatment Program Solutions',
+  description: 'Partner with EqualCure to expand access to Hepatitis C treatment while optimizing your 340B program benefits.',
+  openGraph: {
+    title: 'EqualCure | HCV Treatment Program Solutions',
+    description: 'Partner with EqualCure to expand access to Hepatitis C treatment while optimizing your 340B program benefits.',
+    url: 'https://equalcure-v3.vercel.app',
+    siteName: 'EqualCure',
+    images: [
+      {
+        url: '/og-image.jpg', // You'll need to add this image to your public folder
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'EqualCure | HCV Treatment Program Solutions',
+    description: 'Partner with EqualCure to expand access to Hepatitis C treatment while optimizing your 340B program benefits.',
+  }
 };
 
 export default function RootLayout({
