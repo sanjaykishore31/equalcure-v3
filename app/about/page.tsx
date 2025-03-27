@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Stethoscope, Building2, Users, Handshake2, ArrowLeft, HeartPulse, LineChart, Microscope, Award, Target, MapPin, ShieldCheck } from 'lucide-react';
+import { Stethoscope, Building2, Users, Handshake, ArrowLeft, HeartPulse, LineChart, Microscope, Award, Target, MapPin, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import { LoginButton } from '@/components/login-button';
 import Image from 'next/image';
@@ -233,7 +233,7 @@ export default function AboutPage() {
               <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 text-white">
                 <div className="flex items-start mb-4">
                   <div className="bg-white/10 p-3 rounded-full mr-4">
-                    <Handshake2 className="h-6 w-6 text-white" />
+                    <Handshake className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">340B Program Support</h3>
