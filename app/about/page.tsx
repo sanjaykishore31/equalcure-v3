@@ -4,24 +4,28 @@ import { Stethoscope, Building2, Users, Handshake, ArrowLeft, HeartPulse, LineCh
 import Link from 'next/link';
 import { LoginButton } from '@/components/login-button';
 import Image from 'next/image';
+import { Logo } from '@/components/ui/logo';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Stethoscope className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold">EqualCure</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/about" className="text-foreground font-medium">
-              About
+      {/* Header */}
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex justify-between items-center">
+          <Logo />
+          <nav className="flex items-center gap-6">
+            <Link href="/" className="text-slate-600 hover:text-slate-900">
+              Home
             </Link>
-            <LoginButton />
-          </div>
-        </nav>
-      </header>
+            <Link href="/signin" className="text-slate-600 hover:text-slate-900">
+              Sign In
+            </Link>
+            <Button variant="default" className="bg-slate-900 hover:bg-slate-800 text-white">
+              Register
+            </Button>
+          </nav>
+        </div>
+      </div>
 
       <main>
         {/* Hero Section */}
@@ -81,7 +85,7 @@ export default function AboutPage() {
                     </div>
                     <div className="flex items-center space-x-2">
                       <Globe className="h-5 w-5 text-white" />
-                      <span className="text-sm text-white/80">Global Impact</span>
+                      <span className="text-sm text-white/80">Local Impact</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <ShieldCheck className="h-5 w-5 text-white" />
@@ -99,7 +103,7 @@ export default function AboutPage() {
                       src="/about/mission.jpg"
                       alt="Our Mission"
                       fill
-                      className="object-cover"
+                      className="object-cover object-center scale-[0.6]"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
@@ -117,7 +121,7 @@ export default function AboutPage() {
               <div className="relative">
                 <h2 className="text-4xl font-bold mb-4 text-center text-white">Meet Our Team</h2>
                 <p className="text-xl text-white/80 text-center max-w-2xl mx-auto">
-                  We are doctors with experience in community-based health care, health policy, and informatics. 
+                  We are doctors with experience in community-based health care, health policy, and informatics.
                 </p>
               </div>
             </div>
@@ -135,8 +139,8 @@ export default function AboutPage() {
                       sizes="(max-width: 768px) 100vw, 256px"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2">Margaret Hayden, MD</h3>
-                  <p className="text-muted-foreground text-center">Co-founder</p>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Margaret Hayden, MD</h3>
+                  <p className="text-slate-600 text-center">Co-founder</p>
                 </div>
               </div>
               
@@ -152,8 +156,8 @@ export default function AboutPage() {
                       sizes="(max-width: 768px) 100vw, 256px"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2">Sanjay Kishore, MD</h3>
-                  <p className="text-muted-foreground text-center">Co-founder</p>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Sanjay Kishore, MD</h3>
+                  <p className="text-slate-600 text-center">Co-founder</p>
                 </div>
               </div>
               
@@ -169,22 +173,16 @@ export default function AboutPage() {
                       sizes="(max-width: 768px) 100vw, 256px"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2">Micah Johnson, MD</h3>
-                  <p className="text-muted-foreground text-center">Co-founder</p>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">Micah Johnson, MD</h3>
+                  <p className="text-slate-600 text-center">Co-founder</p>
                 </div>
               </div>
-            </div>
-            
-            <div className="max-w-3xl mx-auto mt-16 space-y-6 px-4">
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                Most recently, Drs. Hayden and Kishore launched an HCV treatment program in Alabama, and Dr. Johnson worked on prescription drug and insurance policy at the U.S. Department of Health and Human Services.
-              </p>
             </div>
           </div>
 
           {/* How We Work Section */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold mb-12 text-center">How We Work</h2>
+          <section className="container mx-auto px-4 py-16">
+            <h2 className="text-3xl font-bold text-slate-800 text-center mb-8">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 text-white">
                 <div className="flex items-start mb-4">
@@ -248,11 +246,11 @@ export default function AboutPage() {
                 </div>
               </Card>
             </div>
-          </div>
+          </section>
 
-          {/* Impact Section */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Impact</h2>
+          {/* Our Impact Section */}
+          <section className="container mx-auto px-4 py-16">
+            <h2 className="text-3xl font-bold text-slate-800 text-center mb-8">Our Impact</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 text-white">
                 <div className="flex justify-center mb-4">
@@ -284,7 +282,7 @@ export default function AboutPage() {
                 </p>
               </Card>
             </div>
-          </div>
+          </section>
 
           {/* CTA Section */}
           <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 rounded-lg p-8 text-center mb-16">
