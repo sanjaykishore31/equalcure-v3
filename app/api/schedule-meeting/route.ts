@@ -1,5 +1,3 @@
-'use client';  // Add this at the top
-
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
