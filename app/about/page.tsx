@@ -17,12 +17,6 @@ export default function AboutPage() {
             <Link href="/" className="text-slate-600 hover:text-slate-900">
               Home
             </Link>
-            <Link href="/signin" className="text-slate-600 hover:text-slate-900">
-              Sign In
-            </Link>
-            <Button variant="default" className="bg-slate-900 hover:bg-slate-800 text-white">
-              Register
-            </Button>
           </nav>
         </div>
       </div>
@@ -52,8 +46,8 @@ export default function AboutPage() {
                 We're making healthcare more accessible, one patient at a time.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" variant="secondary" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
-                  <Link href="/partnerships">Become a Partner</Link>
+                <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
+                  <Link href="/schedule">Become a Partner</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/20" asChild>
                   <Link href="/">Patient Services</Link>
@@ -292,7 +286,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
-                <Link href="/partnerships">Become a Partner</Link>
+                <Link href="/schedule">Become a Partner</Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/20" asChild>
                 <Link href="/">Patient Services</Link>

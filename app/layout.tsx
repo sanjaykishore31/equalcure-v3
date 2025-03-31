@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'EqualCure | HCV Treatment Program Solutions',
     description: 'Partner with EqualCure to expand access to Hepatitis C treatment while optimizing your 340B program benefits.',
-    url: 'https://equalcure-v3.vercel.app',
+    url: 'https://www.equalcure.org',
     siteName: 'EqualCure',
     images: [
       {

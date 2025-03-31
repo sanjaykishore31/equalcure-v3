@@ -16,12 +16,6 @@ export default function Home() {
             <Link href="/about" className="text-slate-600 hover:text-slate-900">
               About
             </Link>
-            <Link href="/signin" className="text-slate-600 hover:text-slate-900">
-              Sign In
-            </Link>
-            <Button variant="default" className="bg-slate-900 hover:bg-slate-800 text-white">
-              Register
-            </Button>
           </nav>
         </div>
       </div>
@@ -49,8 +43,8 @@ export default function Home() {
               Partner with EqualCure to expand access to Hepatitis C treatment while optimizing your 340B program benefits.
             </p>
             
-            <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0">
-              Schedule Partnership Call
+            <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
+              <Link href="/schedule">Schedule Partnership Call</Link>
             </Button>
           </div>
         </div>
@@ -105,9 +99,11 @@ export default function Home() {
               </div>
             </div>
             
-            <Button size="lg" className="group bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0">
-              Schedule a Partnership Call
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <Button size="lg" className="group bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
+              <Link href="/schedule">
+                Schedule a Partnership Call
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -156,8 +152,8 @@ export default function Home() {
               <p className="text-white/80 mb-8">
                 Schedule a call to learn how EqualCure can help you expand access to HCV treatment while optimizing your 340B program benefits.
               </p>
-              <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0">
-                Schedule Partnership Call
+              <Button size="lg" className="bg-white hover:bg-white/90 text-slate-900 hover:text-slate-900/90 border-0" asChild>
+                <Link href="/schedule">Schedule Partnership Call</Link>
               </Button>
             </div>
           </div>
